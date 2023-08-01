@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylee.css">
+  <link rel="stylesheet" type="text/css" href="5-2-4.css">
+  <script src="https://kit.fontawesome.com/c0e831be90.js" crossorigin="anonymous"></script>
+  
+  <title>Favorite view</title>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="header-logo">
+        <img src="./parts/AnyConv.com__logo.svg" alt="header-logo">
+      </div>
+      
+      <ul class="header-list">
+        <a href="#"><li>ホーム</li></a>
+        <a href="#"><li>おすすめ特集</li></a>
+        <a href="#"><li>スタッフの海外旅行記</li></a>
+        <a href="#"><li>特典・サービス</li></a>
+        <a href="#"><li>お問い合わせ</li></a>
+      </ul>
+
+      <div class="openbtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="header-icon">
+        <a href="#">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div id="kv">
+    <img src="./photo/01.jpg" alt="kv-img">
+
+    <div class="kv-text">
+      <p class="heading
+      "><span>「フェイバリット・ビュー」</span><br>あなたの「お気に入りの景色」を見つけてください</p>
+    </div>
+
+    <div class="kv-nav">
+      <a href="#" class="kv-btn">もっと詳しく</a>
+    </div>
+  </div>
+
+  <main>
+    <div class="container">
+      <h1 class="title"><span>おすすめ特集</span></h1>
+      <p class="lead">「フェイバリット・ビュー」がおすすめする格安海外旅行です。気になったプランがあればすぐご予約を！</p>
+
+      <div class="tripgroup">
+        <div class="tripgroup-menu">
+          <img src="./photo/02.jpg" alt="02">
+          <h2>夢心地のプーケット！</h2>
+          <div class="money">
+            ¥36,800～¥122,000
+          </div>
+          <div class="tripgroup-menutext">
+            お得な欲ばり2ヵ国周遊スペシャル！マレーシア＆プーケット島5日
+          </div>
+        </div>
+
+        <div class="tripgroup-menu">
+          <img src="./photo/03.jpg" alt="03">
+          <h2>スピリチュアルタイ!</h2>
+          <div class="money">
+            ¥52,800～¥123,800
+          </div>
+          <div class="tripgroup-menutext">
+            アユタヤ遺跡＆ バンパイン離宮観光付き！マンダリンセンターポイント2泊4日
+          </div>
+        </div>
+
+        <div class="tripgroup-menu">
+          <img src="./photo/04.jpg" alt="04">
+          <h2>憧れのサントリーニ島!</h2>
+          <div class="money">
+            ¥169,800～¥245,800
+          </div>
+          <div class="tripgroup-menutext">
+            街歩きが楽しめるフィラ地区に2連泊。サントリーニ＆アテネ6日間
+          </div>
+        </div>
+
+        <div class="tripgroup-menu">
+          <img src="./photo/05.jpg" alt="05">
+          <h2>ヨセミテで大自然満喫!</h2>
+          <div class="money">
+            ¥41,029～¥159,800
+          </div>
+          <div class="tripgroup-menutext">
+            世界遺産ヨセミテ国立公園、西海岸人気都市を訪ねる5日間
+          </div>
+        </div>
+      </div>
+
+      <div class="tripgroup-nav">
+        <a href="#" class="tripgroup-btn">もっと詳しく</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="woled">
+        <h1 class="title">海外ツアーを探す</h1>
+
+        <div class="woledmap">
+          <img src="./parts/AnyConv.com__map.svg" alt="map">
+          
+          <ul class="area">
+            <li class="yo-roppa">ヨーロッパ</li>
+            <li class="ahurika">アフリカ・中東</li>
+            <li class="azia">アジア</li>
+            <li class="oseania">オセアニア</li>
+            <li class="mikuronesia">ミクロネシア</li>
+            <li class="kitaamerika">北アメリカ</li>
+            <li class="tyuunanbei">中南米</li>
+          </ul>
+
+          <div class="woled-form">
+            <dl>
+              <dt>出発地</dt>
+              <dd>
+                <select name="user-form" id="user-form">
+                  <option value="東京">東京</option>
+                  <option value="羽田">羽田</option>
+                  <option value="成田">成田</option>
+                  <option value="大坂">大坂（関空・伊丹）</option>
+                  <option value="名古屋">名古屋(中部＋名古屋駅</option>
+                  <option value=”中部”>中部（セントレア）</option>
+                  <option value="名古屋駅">名古屋駅</option>
+                  <option value="福岡">福岡（福岡＋博多港）</option>
+                  <option value="福岡">福岡</option>
+                  <option value="博多港">博多港</option>
+                  <option value="札幌">札幌</option>
+                </select>
+              </dd>
+
+              <dt>出発希望日</dt>
+              <dd><input type="date"></dd>
+
+              <dt>行き先</dt>
+              <dd><select name="user-go-to" id="go-to">
+                <option value="選択">選択してください</option>
+                <option value="ヨーロッパ">ヨーロッパ</option>
+                <option value="アジア">アジア</option>
+                <option value="アフリカ・中東">アフリカ・中東</option>
+                <option value="ミクロネシア">ミクロネシア</option>
+                <option value="中南米">中南米</option>
+                <option value="オセアニア">オセアニア</option>
+              </select>
+            </dd>
+
+            <dt>キーワードで探す</dt>
+            <dd><input type="text" value="行きたい国や地名などを入力してください"></dd>
+            </dl>
+
+            <div class="form-nav">
+              <a href="#" class="form-seach">検索</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1 class="title">スタッフの海外旅行記</h1>
+
+      <div class="Overseas-travel-diary">
+
+        <div class="travelogue">
+          <img src="./photo/06.jpg" alt="06">
+          <div class="travelogue-text">
+            <h3 class="travelogue-title">パリ・ループル</h3>
+            <div class="travelogue-article">
+              パリは歩いてるだけで本当に楽しかったです。
+            </div>
+
+            <div class="staff">
+              (ヨーロッパ担当スタッフA)
+            </div>
+          </div>
+        </div>
+
+        <div class="travelogue">
+          <img src="./photo/07.jpg" alt="07">
+          <div class="travelogue-text">
+            <h3 class="travelogue-title">アンテロープキャニオン</h3>
+            <div class="travelogue-article">
+              うっとりするような曲線とやわらかな色に差し込む陽の光が幻想的でした！
+            </div>
+
+            <div class="staff">
+              （アメリカ担当スタッフH）
+            </div>
+          </div>
+        </div>
+
+        <div class="travelogue">
+          <img src="./photo/08.jpg" alt="08">
+          <div class="travelogue-text">
+            <h3 class="travelogue-title">アイスランド</h3>
+            <div class="travelogue-article">
+              セリャランスフォス滝は、透けるような滝でまさに絶景でした。
+            </div>
+
+            <div class="staff">
+              （ヨーロッパ担当スタッフK）
+            </div>
+          </div>
+        </div>
+
+        <div class="travelogue">
+          <img src="./photo/09.jpg" alt="09">
+          <div class="travelogue-text">
+            <h3 class="travelogue-title">タイ・サムイ島</h3>
+            <div class="travelogue-article">
+              海がキレイ！プーケットより断然サムイ島です！
+            </div>
+
+            <div class="staff">
+              （アジア担当スタッフM）
+            </div>
+          </div>
+        </div>
+
+        <div class="travelogue">
+          <img src="./photo/10.jpg" alt="10">
+          <div class="travelogue-text">
+            <h3 class="travelogue-title">イタリア・ヴェネチア</h3>
+            <div class="travelogue-article">
+              さよならサン・マルコ。一生に一度は行っておきたい場所。
+            </div>
+
+            <div class="staff">
+              (ヨーロッパ担当スタッフA)
+            </div>
+          </div>
+        </div>
+
+        <div class="travelogue">
+          <img src="./photo/11.jpg" alt="11">
+          <div class="travelogue-text">
+            <h3 class="travelogue-title">ノイシュバンシュタイン城</h3>
+            <div class="travelogue-article">
+              初めて見るノイシュバンシュタイン城にちょっとテンションが高くなります。
+            </div>
+
+            <div class="staff">
+              （ヨーロッパ担当スタッフS）
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="travelogue-nav">
+        <a href="#" class="travelogue-btn">もっと詳しく</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <img src="./parts/AnyConv.com__logo_footer.svg" alt="footer-logo">
+        </div>
+        
+          <p class="footer-form">〒151-0051 東京都渋谷区千駄ヶ谷 2-15-62</p>
+          <p class="tel"><i class="fa-solid fa-phone">  03-5690-9842</i></p>
+          
+          <p class="e-mail"><i class="fa-solid fa-envelope">  favo_view@co.jp</i></p>
+          
+          <div class="sns">
+            <a href="#" class="sns1"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="sns1"><i class="fa-brands fa-twitter"></i></a>
+
+            <a href="#" class="sns1"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+      <div class="footer-nav">
+        <ul class="footer-middlelist">
+          <a href="#"><li>おすすめ特集</li></a>
+          <a href="#"> <li>スタッフの海外旅行記</li></a>
+          <a href="#"><li>特典・サービス</li></a>
+          <a href="#"><li>お問い合わせ</li></a>
+        </ul>
+      </div>
+
+      <div class="footer-right">
+        <ul class="footer-rightlist">
+          <a href="#"><li>トラベルサポート</li></a>
+          <a href="#"><li>海外旅行保険</li></a>
+          <a href="#"><li>保険募集に関する勧誘方針及び販売方針</li></a>
+          <a href="#"><li>外務省海外安全情報</li></a>
+          <a href="#"><li>厚生労働省感染情報</li></a>
+          <a href="#"><li>個人情報保護方針
+          </li></a>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script src="js/5-2-4.js"></script>
+</body>
+
+</html>
